@@ -1,0 +1,38 @@
+package com.example.tryhardcountrunner;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
+public class TryHardController {
+    public TextField textFeildUPC;
+    public TextArea dialogArea;
+    @FXML
+    private Label welcomeText;
+
+    @FXML
+    private void onEnterPressed() {
+        String enteredText = this.textFeildUPC.getText();
+        if (enteredText.length() == 12) {
+            if (enteredText.isEmpty()) {
+                this.welcomeText.setText("");
+                return;
+            }
+
+            UpcCounter upc = new UpcCounter(enteredText);
+            upc.hashCheck();
+            this.welcomeText.setText("Scanned: " + enteredText);
+        } else {
+            this.welcomeText.setText("INVALID SCAN!!!!");
+        }
+
+        this.textFeildUPC.clear();
+    }
+
+    @FXML
+    protected void onFinishedButtonClick() {
+        this.dialogArea.appendText("\n=== Scanning Finished ===\n");
+        this.dialogArea.appendText(UpcCounter.getKeysAndVals());
+    }
+}
