@@ -1,0 +1,9 @@
+package com.example.tryhardcountrunner;
+
+public class TryHard extends javafx.application.Application {
+    public TryHard() { /* compiled code */ }
+
+    public void start(javafx.stage.Stage stage) throws java.io.IOException { /* compiled code */ }
+
+    public static void main(java.lang.String[] args) { /* compiled code */ }
+}
