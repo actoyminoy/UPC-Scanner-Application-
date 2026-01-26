@@ -1,0 +1,7 @@
+#mainVbox {
+    -fx-background-color: #f4f4f4;
+}
+.text-field, .text-area {
+    -fx-control-inner-background: white;
+    -fx-text-fill: black;
+}

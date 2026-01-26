@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>TryHardCountRunner</artifactId>
+    <artifactId>CountRunner</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>TryHardCountRunner</name>
+    <name>CountRunner</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -69,7 +69,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.tryhardcountrunner/com.visualcounter.VisualCounterMainView
+                            <mainClass>com.example.countrunner/com.visualcounter.VisualCounterMainView
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
