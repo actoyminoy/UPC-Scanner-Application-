@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="mainVbox" alignment="TOP_CENTER" prefHeight="254.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visualcounter.VisualCounterController">
+
+    <MenuBar id="mainViewMenuBar">
+        <Menu id="mainViewThemeMenu" text="Theme">
+            <MenuItem id="themeMenuLightButton" onAction="#handlesLightMode" text="Light" />
+            <MenuItem id="themeMenuDarkButton" onAction="#handlesDarkMode" text="Dark" />
+        </Menu>
+    </MenuBar>
+
+    <VBox id="innerVbox" alignment="TOP_CENTER" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+
+        <TextField id="enterUpcTextField" fx:id="textFieldUPC" alignment="TOP_CENTER" onAction="#onEnterPressed" promptText="Enter UPC Here">
+            <font>
+                <Font name="DejaVu Sans Bold Oblique" size="15.0" />
+            </font>
+        </TextField>
+
+      <Label fx:id="welcomeText" alignment="CENTER" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+
+        <Button id="finishedScanningButton" alignment="CENTER" contentDisplay="CENTER" onAction="#onFinishedButtonClick" prefHeight="29.0" prefWidth="142.0" text="Finished Scanning" textAlignment="CENTER">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+
+        <TextArea id="outputText-field" fx:id="dialogArea" editable="false" prefHeight="300" prefWidth="400" wrapText="true" />
+    </VBox>
+
+    <cursor>
+        <Cursor fx:constant="OPEN_HAND" />
+    </cursor>
+</VBox>

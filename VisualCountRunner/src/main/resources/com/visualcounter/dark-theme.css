@@ -1,0 +1,61 @@
+#mainVbox {
+    -fx-background-color: #000000;
+}
+
+.menu-bar {
+    -fx-background-color: #000000;
+    -fx-border-color: #333333;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+}
+
+.menu-bar .menu-button:hover,
+.menu-bar .menu-button:focused,
+.menu-bar .menu-button:showing {
+    -fx-background-color: #333333;
+}
+
+
+.context-menu {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #333333;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+    -fx-background-color: #333333;
+}
+
+.text-field, .text-area {
+    -fx-control-inner-background: #000000;
+    -fx-background-color: #000000;
+    -fx-border-color: #666666;
+    -fx-border-radius: 3;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: white;
+    -fx-border-color: #333333;
+    -fx-border-radius: 3;
+}
+
+.button:hover {
+    -fx-background-color: #333333;
+}

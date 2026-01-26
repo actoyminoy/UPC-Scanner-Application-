@@ -10,7 +10,7 @@ import java.io.IOException;
 public class VisualCounterMainView extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(VisualCounterMainView.class.getResource("TryHard-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(VisualCounterMainView.class.getResource("VisualCounter-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 360);
         stage.setTitle("UPC Counter");
         stage.setScene(scene);
